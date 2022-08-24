@@ -1,0 +1,14 @@
+block vars
+    - var pageTitle = 'Main page'
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title #{pageTitle}
+        link(rel="stylesheet", href="./css/style.min.css")
+        linl(rel="icon" href="./img/favicon.ico" type="image/x-icon")
+    body 
+        block page 
+        script(src="js/index.js")

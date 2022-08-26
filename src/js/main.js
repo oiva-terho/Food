@@ -16,7 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
     tabs();
     forms(server);
     slider(server);
-    calculator();
+     try { calculator(); }
+     catch { console.log('Calculator is broken'); }
     menu(server);
     timer(db.deadline);
 });
